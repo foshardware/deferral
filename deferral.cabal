@@ -1,0 +1,19 @@
+name:                deferral
+version:             0.0.0.0
+synopsis:            Swift style "defer" function in a "Deferral" monad similar to ExceptT
+description:
+
+license:             PublicDomain
+license-file:        LICENSE 
+category:            Hardware
+build-type:          Simple
+cabal-version:       >=1.18
+tested-with:         GHC==7.8.2
+
+Library
+  hs-source-Dirs:    .
+  Build-depends:     base >= 4.7, exceptions, semigroupoids, transformers
+  ghc-options:       -Wall -O2 -fno-warn-orphans -fno-warn-unused-do-bind
+  default-language:  Haskell2010
+  Exposed-Modules:
+    Control.Monad.Deferral
